@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>history</title>
+        <link rel="stylesheet" href="history.css">
+    </head>
+    <body onload="scrollWindow();" style="min-width:3000px; min-height:3000px; cursor:auto;"><button style="bottom:0;" onclick="history.back()">Back</button>
+    <div class="welcome"><i><marquee
+        direction="down"
+        width="250"
+        behavior="alternate"
+        style="border:dotted 5px;">
+        <marquee behavior="alternate">welcome to hell. enjooy your stay</marquee>
+      </marquee></i></div>
+
+<img style="width:300px;top:250px;" src="1.jpeg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;top:30px;" src="2.jpeg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:0px;margin-left:-550px;" src="3.jpeg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:0px;margin-left:200px;" src="4.jpeg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:-50px;margin-left:-100px;top:-250px;" src="5.webp" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:50px;margin-left:-400px;top:200px;" src="7.jpeg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:50px;margin-left:-100px;top:350px;" src="6.jpeg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:50px;margin-left:-100px;top:350px;" src="8.jpg" title="drag-and-drop image script" class="dragme">
+
+<img style="width:300px;left:50px;margin-left:-100px;top:350px;" src="9.webp" title="drag-and-drop image script" class="dragme">
+
+ <script>
+    function startDrag(e) {
+              // determine event object
+              if (!e) {
+                  var e = window.event;
+              }
+              if(e.preventDefault) e.preventDefault();
+
+              // IE uses srcElement, others use target
+              var targ = e.target ? e.target : e.srcElement;
+
+              if (targ.className != 'dragme') {return};
+              // calculate event X, Y coordinates
+                  offsetX = e.clientX;
+                  offsetY = e.clientY;
+
+              // assign default values for top and left properties
+              if(!targ.style.left) { targ.style.left='0px'};
+              if (!targ.style.top) { targ.style.top='0px'};
+
+              // calculate integer values for top and left 
+              // properties
+              coordX = parseInt(targ.style.left);
+              coordY = parseInt(targ.style.top);
+              drag = true;
+
+              // move div element
+                  document.onmousemove=dragDiv;
+              return false;
+              
+          }
+          function dragDiv(e) {
+              if (!drag) {return};
+              if (!e) { var e= window.event};
+              var targ=e.target?e.target:e.srcElement;
+              // move div element
+              targ.style.left=coordX+e.clientX-offsetX+'px';
+              targ.style.top=coordY+e.clientY-offsetY+'px';
+              return false;
+          }
+          function stopDrag() {
+              drag=false;
+          }
+          window.onload = function() {
+              document.onmousedown = startDrag;
+              document.onmouseup = stopDrag;
+          }
+</script>    
+<div id="animatedBackground">
+</div>
+</body>
+</html>
