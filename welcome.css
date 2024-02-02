@@ -1,0 +1,30 @@
+#updates {
+    font-size:12px;
+    color:Text;
+    text-align:center;
+    height:20px;
+    width:150px;
+    padding:4px;
+    bottom:0;
+    z-index:10;
+    position:fixed;
+    overflow:hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+  
+  #updates:hover {
+    height:173px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+  
+  #updatestitle {
+    font-size:13px; 
+    text-transform:uppercase; 
+    background-color:blue; 
+    font-weight:bold; 
+    color:#ffffff;
+  }
