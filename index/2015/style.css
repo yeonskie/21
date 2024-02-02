@@ -233,7 +233,8 @@ body .container input[type=radio] + label .content {
 h3 {
   color:rgb(255, 255, 255);
   font-size:35px;
-  padding-left:25px;
+  padding-left:35px;
+  padding-top:35px;
 }
 
 h2 {
