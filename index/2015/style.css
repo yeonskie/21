@@ -216,7 +216,7 @@ body .container input[type=radio] + label .content {
 }
 
 #updates:hover {
-  height:150px;
+  height:173px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -343,7 +343,8 @@ h2 {
 }
 
 .entries {
-  margin-top:6px;
+  top:50px;
+  left:650px;
   width:50px;
   position:absolute;
   right:0;
@@ -446,3 +447,8 @@ a{
   text-decoration: none;
 }
 
+button {
+  margin-left:35px;
+  padding:3px;
+  width:250px;
+}

@@ -26,7 +26,7 @@ body {
 }
 
 #updates:hover {
-  height:125px;
+  height:140px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -39,6 +39,7 @@ body {
   font-weight:bold; 
   color:#000000;
   border: solid 2px black;
+  animation: fadeIn 5s forwards;
 }
 
 .dates {
@@ -60,10 +61,28 @@ a:hover {
     margin: -5px;
   }
 
-  @keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;} 
- } 
+  .please {
+    animation: fadeInOut 5s ease-in-out forwards;
+  }
+
+  .enter {
+    text-align:center;
+    padding-top:75px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
   
   @keyframes spin {
     0% {
@@ -189,10 +208,6 @@ a:hover {
     }
   }
 
-  h1 {
-    color: green;
-}
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -202,4 +217,3 @@ a:hover {
         opacity: 1;
     }
 }
-  
