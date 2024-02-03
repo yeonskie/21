@@ -6,9 +6,15 @@
     </head>
     <body>
         <div class="centering">
-        <p style="width:40%;">all twenty-one years of my life are documented, either through photos, social media, the internet... i wonder what kind of online persona i've cultivated. what kind of person, if they saw everything i've done and put out there for the world to see—would they think i am?</p>
-        <p style="text-decoration:underline;" id="toggleButton">ready to start an adventure?</p>
-        </div>
+       <p style="text-decoration:underline;">hi, my name is savannah sok.</p>
+          <p style="width:40%;">all twenty-one years of my life are documented, either through photos, social media, the internet... i wonder what kind of online persona i've cultivated. if they saw everything i've done and put out there for the world to see—who would they think i am?</p><br>
+        <div class="find">wanna find out?</div>
+        <div class="buttons">
+        <p id="toggleButton">> yes</p></div>
+        <div class="buttons2">
+        <p id="playButton">> no</p>
+        <audio id="audioPlayer" src="wrongbutton.mp3"></audio>
+        </div></div>
 <div class="center">
 <div id="hiddenDiv" class="hidden">
 <ul class='timeline'>
@@ -55,6 +61,12 @@
     } else {
         hiddenDiv.classList.add('hidden');
     }
-});</script>
+});
+
+document.getElementById('playButton').addEventListener('click', function() {
+  var audio = document.getElementById('audioPlayer');
+  audio.play();
+});
+</script>
     </body>
 </html>
