@@ -1,3 +1,16 @@
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+html, body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  line-height: 2;
+  height: 100%;
+  text-transform: uppercase;
+}
+
 #updates {
     font-size:12px;
     color:Text;
@@ -6,6 +19,7 @@
     width:150px;
     padding:4px;
     bottom:0;
+    right:0;
     z-index:10;
     position:fixed;
     overflow:hidden;
@@ -22,9 +36,26 @@
   }
   
   #updatestitle {
-    font-size:13px; 
+    font-size:10px; 
     text-transform:uppercase; 
-    background-color:blue; 
+    background-color:red; 
     font-weight:bold; 
     color:#ffffff;
   }
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  background-color:yellow;
+}
+
+a:hover {
+  text-decoration:underline 2px;
+}
+
