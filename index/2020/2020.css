@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "big-caslon-fb", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center; /* Center align content */
+}
+
+input[type="password"] {
+  width: calc(100% - 60px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button {
+  height: 40px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "big-caslon-fb", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color:#ffffff;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.buttons {
+  padding-top:7px;
+}
+
+h2 {
+  font-size:20px;
+}
+
+:root {
+  --background-color: #f0f0f0; /* Default background color */
+  --text-color: #333; /* Default text color */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}

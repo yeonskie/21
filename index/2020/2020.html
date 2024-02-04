@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="2020.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rrl7mcn.css">
+</head>
+<body>
+  <button style="position:absolute;bottom:7px;left:7px;background-color:#f0f0f0;color:black;" onclick="goBack()">back</button>
+  <button style="position:absolute;left:7px;top:7px;background-color:#f0f0f0;color:black;" onclick="toggleMode()">change</button>
+  <div class="login-container">
+    <h2>thoughts i can't tell anyone</h2>
+    <p>sorry in advance.</p>
+    <form id="login-form">
+        <input type="password" id="password" name="password" placeholder="" required>
+        <div class="buttons">
+        <button type="submit">enter</button>
+      </div>
+    </form>
+    <p id="login-error" class="error-message"></p>
+    <p id="hint" class="hint"></p> <!-- Hint element -->
+</div>
+        </form>
+        <p id="login-error" class="error-message"></p>
+    </div>
+    <script>
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    var password = document.getElementById("password").value;
+    var errorElement = document.getElementById("login-error");
+    var hintElement = document.getElementById("hint");
+
+    // Check if password is correct
+    if (password === "popcda") {
+        // Redirect to the enter page on successful login
+        window.location.href = "enter.html";
+    } else {
+        // Show error message
+        errorElement.textContent = "Invalid password";
+
+        // Display hint
+        hintElement.style.display = "block";
+        hintElement.textContent = "Hint: Try using a different password";
+    }
+});
+
+function toggleMode() {
+    var body = document.body;
+    var currentMode = body.classList.contains("dark-mode") ? "dark" : "light";
+
+    if (currentMode === "dark") {
+        body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+        // Set light mode colors
+        document.documentElement.style.setProperty("--background-color", "#f0f0f0");
+        document.documentElement.style.setProperty("--text-color", "#333");
+    } else {
+        body.classList.remove("light-mode");
+        body.classList.add("dark-mode");
+        // Set dark mode colors
+        document.documentElement.style.setProperty("--background-color", "#333");
+        document.documentElement.style.setProperty("--text-color", "#f0f0f0");
+    }
+}
+
+    </script>
+</body>
+</html>
