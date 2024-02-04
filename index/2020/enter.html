@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="enter.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rrl7mcn.css">
         <title>ok</title>
     </head>
     <body>
-        <p>yes</p>
+        <div class="welcome">welcome</div>
+        <div class="dropdown">
+            <div class="dropbtn">index</div>
+            <div class="dropdown-content">
+              <a href="page1.html">3/28/20</a>
+              <a href="page2.html">Page 2</a>
+              <a href="page3.html">Page 3</a>
+            </div>
+          </div>
+          <script>
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.style.display === "block") {
+                            openDropdown.style.display = "none";
+                        }
+                    }
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+    // Add the 'active' class to the body to trigger the fade-in effect
+    document.body.style.opacity = 1;
+});
+        </script>
     </body>
 </html>
