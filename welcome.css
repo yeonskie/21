@@ -55,7 +55,7 @@ body {
 }
 
 .timeline .year:hover {
-  background:rgb(255, 0, 0);
+  background:red;
 }
 
 .timeline .year:first-of-type {
@@ -249,3 +249,6 @@ a:hover {
 	}
 }
 
+.name:hover {
+  font-style:italic;
+}
