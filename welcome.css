@@ -36,10 +36,10 @@ body {
   margin: 0px;
   overflow: hidden;
   list-style-type: none;
-  height:520px;
+  height:400px;
   width:400px;
   overflow-y: auto;
-  padding-top:175px;
+  margin-top:175px;
 }
 
 
@@ -75,7 +75,7 @@ body {
   padding: .4em;
   background: white;
   z-index: 15;
-  color: #4d4d4d;
+  color: #000000;
   border: 1px solid #9d9d9d;
   text-decoration: none;
   -webkit-transition: background .15s linear;
