@@ -51,7 +51,7 @@ body, html {
     border: 2px black;
     border-style:double;
     padding:10px;
-    font-size:25px;
+    font-size:17px;
 }
 
 body {
@@ -103,4 +103,8 @@ button:hover {
 
 .container {
     padding:10px;
+}
+
+.welcome:hover {
+    font-style:italic;
 }
