@@ -40,12 +40,16 @@ body, html {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    text-decoration:underline;
+    font-style:italic;
+    padding: 12px 5px;
+    display: block;
 }
 
 .dropbtn {
     text-decoration:underline;
-    border: 2px dotted black;
+    border: 2px black;
+    border-style:double;
     padding:10px;
     font-size:25px;
 }
@@ -91,3 +95,6 @@ button {
     background-color:white;
 }
 
+.container {
+    padding:10px;
+}

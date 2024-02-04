@@ -8,16 +8,40 @@
         <title>ok</title>
     </head>
     <body>
-        
-        <div class="welcome">welcome <button onclick="goBack()">Go Back</button></div>
+        <div class="welcome">welcome <button onclick="goBack()">Go Back</button> 
+        <button onclick="goToURL()">Go to URL</button>
+        </div>
+        <div class="container">
         <div class="dropdown">
-            <div class="dropbtn">index</div>
+            <div class="dropbtn">before</div>
             <div class="dropdown-content">
               <a href="entry1.html">3/28/20</a>
               <a href="entry2.html">6/2/20</a>
-              <a href="entry3.html">12/9/20</a>
+              <a href="entry3.html">12/9/</a>
             </div>
           </div>
+        </div>
+
+        <div class="container">
+            <div class="dropdown">
+                <div class="dropbtn">during</div>
+                <div class="dropdown-content">
+                  <a href="entry1.html">3/28/20</a>
+                  <a href="entry2.html">6/2/20</a>
+                  <a href="entry3.html">12/9/</a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+                <div class="dropdown">
+                    <div class="dropbtn">after</div>
+                    <div class="dropdown-content">
+                      <a href="entry1.html">3/28/20</a>
+                      <a href="entry2.html">6/2/20</a>
+                      <a href="entry3.html">12/9/</a>
+                    </div>
+                  </div>
+                </div>
           <script>
             window.onclick = function(event) {
                 if (!event.target.matches('.dropbtn')) {
@@ -35,6 +59,12 @@
     // Add the 'active' class to the body to trigger the fade-in effect
     document.body.style.opacity = 1;
 });
+
+function goToURL() {
+  // Replace 'https://example.com' with the URL you want to navigate to
+  window.location.href = 'http://21yearsofgirlhood.com/welcome.html';
+}
+
         </script>
     </body>
 </html>
