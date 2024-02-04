@@ -1,0 +1,32 @@
+body {
+    font-family: "big-caslon-fb", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-y:hidden;
+}
+
+.container {
+    margin-top:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 500px;
+  }
+  
+  .centered-div {
+    /* Styles for the centered div */
+    width:500px;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:50px;
+    height:100%;
+  }
+  
+
+button {
+    font-family: "big-caslon-fb", serif;
+    font-weight: 400;
+    font-style: normal;
+    border:1px solid black;
+    background-color:white;
+}
