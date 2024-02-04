@@ -10,7 +10,7 @@ body, html {
   overflow:hidden;
 }
 
-body {
+html {
   cursor: url('https://64.media.tumblr.com/c3df3e12f1c8adc3b0efb78020770055/tumblr_inline_mv6lucFRov1r63cto.png'), auto;
 }
 
@@ -251,4 +251,33 @@ a:hover {
 
 .name:hover {
   font-style:italic;
+}
+
+body.light-mode {
+  color: black;
+  background-color: white;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  color: white;
+  background-color: black;
+}
+
+#toggleModeButton {
+  position: fixed;
+  bottom:10px;
+  left: 10px;
+}
+
+button {
+  border:none;
+  border-radius:3px;
+  font-family: "input-sans", sans-serif;
+  font-size:12px;
+  background-color:white;
+}
+
+button:hover {
+  background-color:lime;
 }
