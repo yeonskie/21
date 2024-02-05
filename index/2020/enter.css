@@ -9,6 +9,12 @@ body, html {
     font-style: normal;
 }
 
+html {
+    border: 1px solid black;
+    margin:15px;
+    height:95%;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -120,3 +126,4 @@ select {
     font-weight: 400;
     font-style: normal;
 }
+
