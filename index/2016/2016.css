@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set height to 100% of viewport height */
+    overflow-y:hidden;
+    
+  }
+
+  .offset-window {
+    height: calc(100vh - 50px); /* Set height to 100% of viewport height minus the offset */
+    overflow: auto; /* Enable scrolling when content exceeds the height of the div */
+    margin-top:200px;
+    margin-bottom:200px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width:100%;
+    border-radius:25px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+  }
+  
+  .container { 
+    
+    width: 95%;/* Set the width of the container */
+    display:flex;
+  }
+
+  .sidebar {
+    width: 150px;
+    background-color: rgba(0, 0, 255, 0.25); /* Blue background color with 50% opacity */ /* Sidebar background color */
+    color: #fff; /* Text color */
+    height:calc(100vh - 50px); /* Set height to 100% of viewport height */
+    position: fixed; /* Fix the sidebar position */ /* Position on the left side */
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left:10px;
+  }
+  
+  .sidebar ul li {
+    padding: 5px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .content {
+    margin-left:150px;
+    padding: 20px;
+    position:fixed;
+    
+  }
+
+  button {
+    position:fixed;
+    bottom:35px;
+    font-family: "xunga-variable", sans-serif;
+    font-variation-settings: "STRS" -50, "wdth" 100;
+    background-color:none;
+    border:none;
+  }
+
+
+.hello {
+    height: 100%;
+  }
+
+a:hover {
+    font-style:italic;
+}
+
+p {
+    font-size:13px;
+    padding-left:5px;
+    padding-right:10px;
+}
+
+p:hover {
+    color:blueviolet;
+}
+
+.left {
+    float: left; /* Float left */
+    width: 50%; /* 50% width */
+  }
+  
+  .right {
+    float: right; /* Float right */
+    width: 50%; /* 50% width */
+  }
