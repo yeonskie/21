@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set height to 100% of viewport height */
+    overflow-y:hidden;
+    
+  }
+
+  .offset-window {
+    height: calc(100vh - 50px); /* Set height to 100% of viewport height minus the offset */
+    overflow: auto; /* Enable scrolling when content exceeds the height of the div */
+    margin-top:200px;
+    margin-bottom:200px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width:100%;
+    border-radius:25px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+  }
+  
+  .container { 
+    
+    width: 95%;/* Set the width of the container */
+  }
+
+  .sidebar {
+    width: 150px;
+    background-color: rgba(0, 0, 255, 0.25); /* Blue background color with 50% opacity */ /* Sidebar background color */
+    color: #fff; /* Text color */
+    height:calc(100vh - 50px); /* Set height to 100% of viewport height */
+    position: fixed; /* Fix the sidebar position */ /* Position on the left side */
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left:10px;
+  }
+  
+  .sidebar ul li {
+    padding: 5px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .content {
+    margin-left:150px;
+    padding: 20px;
+    position:fixed;
+    
+  }
+
+  .button2 {
+    position:fixed;
+    bottom:35px;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:none;
+    border:none;
+  }
+
+
+.hello {
+    height: 100%;
+  }
+
+a:hover {
+    font-style:italic;
+}
+
+p {
+    font-size:13px;
+    padding-left:5px;
+    padding-right:10px;
+}
+
+p:hover {
+    color:blueviolet;
+}
+
+.container2 {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-left:200px;
+    margin-right:50px;
+    margin-top:50px;
+    align-items: start;
+    position:relative;
+  }
+  
+  .post {
+    background-color: #f9f9f9; /* Background color for each post */
+    border: 1px solid #ddd; /* Add border for each post */ /* Add margin between posts */
+    padding: 10px; /* Add padding inside each post */
+    display: flex;
+    flex-direction: column;
+    position:relative;
+  }
+  
+  .post h2 {
+    margin-top: 0; /* Remove margin from the top of the post title */
+    color:darkslateblue;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .post p {
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .post > * {
+    flex: 1;
+  }
+
+  .ask-box {
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:none;
+  }
+
+  #message-input {
+    width: 100%;
+    height:250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:15px;
+  }
+
+  #send-button {
+    width: 10%;
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.25);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #send-button:hover {
+    background-color: #d0d0d0;
+  }
+
+h1 {
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+    margin-top:0;
+}
