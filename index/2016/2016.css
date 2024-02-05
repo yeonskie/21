@@ -130,4 +130,7 @@ p:hover {
   .post > * {
     flex: 1;
   }
-  
+
+  h3 {
+    font-size:12px;
+  }
