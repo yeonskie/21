@@ -5,29 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="enter.css">
         <link rel="stylesheet" href="https://use.typekit.net/rrl7mcn.css">
-        <title>ok</title>
+        <title>secret</title>
     </head>
     <body>
-      <div class="musicplayer">
-      <select id="songSelect">
-        <option value="song1.mp3">where'd all the time go? - dr. dog</option>
-        <option value="song2.mp3">wish you were sober - conan gray</option>
-        <option value="song3.mp3">are you bored yet? (ft. clairo) - wallows</option>
-        <option value="song4.mp3">dontmakemefallinlove - cuco</option>
-        <option value="song5.mp3">warm blood - flor</option>
-
-        <!-- Add more options for additional songs -->
-    </select>
-    
-    <audio id="myAudio">
-        <source id="audioSource" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-<button onclick="playAudio()">play</button>
-<button onclick="pauseAudio()">pause</button>
-<button onclick="stopAudio()">stop</button>
-</div>
         <div class="welcome">welcome <button onclick="goBack()">back</button> 
         <button onclick="goToURL()">welcome page</button>
         </div>
@@ -110,6 +90,9 @@ songSelect.addEventListener("change", function() {
   audio.load();
 });
 
+function goBack() {
+  window.history.back();
+}
 
 
         </script>

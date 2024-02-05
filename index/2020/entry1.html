@@ -6,6 +6,26 @@
         <link rel="stylesheet" href="https://use.typekit.net/rrl7mcn.css">
     </head>
     <body>
+        <div class="musicplayer">
+            <select id="songSelect">
+              <option value="song1.mp3">where'd all the time go? - dr. dog</option>
+              <option value="song2.mp3">wish you were sober - conan gray</option>
+              <option value="song3.mp3">are you bored yet? (ft. clairo) - wallows</option>
+              <option value="song4.mp3">dontmakemefallinlove - cuco</option>
+              <option value="song5.mp3">warm blood - flor</option>
+      
+              <!-- Add more options for additional songs -->
+          </select>
+          
+          <audio id="myAudio">
+              <source id="audioSource" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+      
+      <button onclick="playAudio()">play</button>
+      <button onclick="pauseAudio()">pause</button>
+      <button onclick="stopAudio()">stop</button>
+      </div>
         <div class="container">
             <div class="centered-div">
                 <h1>entry #1</h1><h2>3/28/20</h2>
@@ -16,9 +36,34 @@
             </div>
         </div>
         <script>
-        function goBack() {
-            window.history.back();
-          }
+       var audio = document.getElementById("myAudio");
+var audioSource = document.getElementById("audioSource");
+var songSelect = document.getElementById("songSelect");
+
+// Set the initial volume (0.5 for example, adjust as needed)
+audio.volume = 0.5;
+
+function playAudio() {
+  audio.play();
+}
+
+function pauseAudio() {
+  audio.pause();
+}
+
+function stopAudio() {
+  audio.pause();
+  audio.currentTime = 0;
+}
+
+songSelect.addEventListener("change", function() {
+  audioSource.src = songSelect.value;
+  audio.load();
+});
+
+function goBack() {
+  window.history.back();
+}
           </script>
     </body>
 </html>
