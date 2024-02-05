@@ -108,3 +108,15 @@ button:hover {
 .welcome:hover {
     font-style:italic;
 }
+
+.musicplayer {
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+select {
+    font-family: "big-caslon-fb", serif;
+    font-weight: 400;
+    font-style: normal;
+}
