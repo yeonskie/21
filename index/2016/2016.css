@@ -95,19 +95,22 @@ p:hover {
 
 .container2 {
     display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
     margin-left:200px;
     margin-right:50px;
     margin-top:50px;
-    gap:50px;
+    align-items: start;
+    position:relative;
   }
   
   .post {
     background-color: #f9f9f9; /* Background color for each post */
     border: 1px solid #ddd; /* Add border for each post */ /* Add margin between posts */
     padding: 10px; /* Add padding inside each post */
-    display: block; /* Change display property to block to stack posts vertically */
+    display: flex;
+    flex-direction: column;
+    position:relative;
   }
   
   .post h2 {
@@ -123,3 +126,8 @@ p:hover {
     font-weight: 400;
     font-style: normal;
   }
+
+  .post > * {
+    flex: 1;
+  }
+  
