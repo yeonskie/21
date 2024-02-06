@@ -176,3 +176,19 @@ h1 {
     font-size:25px;
     margin-top:0;
 }
+
+.diary .secret-link {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Style for revealing the link on hover */
+.diary:hover .secret-link {
+  opacity: 1;
+}
+
+.secret-link {
+padding-left:10px;
+color:blueviolet;
+font-size:14px;
+}
