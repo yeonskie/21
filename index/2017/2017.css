@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+  body {
+    background-color:blanchedalmond;
+    margin:0;
+    font-family: "brevia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+    
+ h1 {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 50px;
+  }
+
+  @font-palette-values --Grays {
+    font-family: Rocher;
+    base-palette: 9;
+  }
+  
+  @font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+  }
+  
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+  }
+  
+  .grays {
+    font-palette: --Grays;
+  }
+  
+  .purples {
+    font-palette: --Purples;
+  }
+  
+  .mint {
+    font-palette: --Mint;
+  }
+
+  .banner {
+    width: 100%; /* Full width */
+    height: 200px; /* Adjust height as needed */
+    background-image: url('flowers.jpg'); /* URL to your banner image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Font size */
+  }
+
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 150px; /* Adjust height for smaller screens */
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }
+
+  .banner {
+    border-bottom:3px solid #7851A9;
+  }
+
+  .profile {
+    padding:30px;
+  }
+
+  h2 {
+    font-size:20px;
+  }
+
+  p {
+    margin-top:0;
+    font-size:15px;
+  }
+
+  h3 {
+    font-size:25px;
+    margin:0;
+  }

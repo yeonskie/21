@@ -11,7 +11,7 @@ body, html {
   opacity: 0; /* Initially hide the content */
   animation: fadeIn 1s ease-in forwards; /* Apply animation with 3 seconds duration */
 }
-}
+
 
 html {
   cursor: url('https://64.media.tumblr.com/c3df3e12f1c8adc3b0efb78020770055/tumblr_inline_mv6lucFRov1r63cto.png'), auto;
