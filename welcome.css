@@ -36,13 +36,12 @@ html {
 }
 
 .timeline {
-  margin: 0px;
   overflow: hidden;
   list-style-type: none;
   height:400px;
   width:400px;
   overflow-y: auto;
-  margin-top:175px;
+  margin-top:50%;
 }
 
 
@@ -170,7 +169,7 @@ a:hover {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .centering {
@@ -198,6 +197,7 @@ a:hover {
 	pointer-events: none;
 }
 
+
 .flier > * {
 /* Adjust animation duration to change the element’s speed */
         animation: fly 50s linear infinite;
@@ -210,7 +210,6 @@ a:hover {
 	animation-delay: 1s;
 	z-index: 999999;
 }
-
  /* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
@@ -268,7 +267,7 @@ body.dark-mode {
 }
 
 #toggleModeButton {
-  position: fixed;
+  position: absolute;
   bottom:10px;
   left: 10px;
 }
@@ -282,7 +281,7 @@ button {
 }
 
 button:hover {
-  background-color:lime;
+  text-decoration:underline;
 }
 
 @keyframes fadeIn {
@@ -292,4 +291,8 @@ button:hover {
   to {
     opacity: 1; /* End with fully visible */
   }
+}
+
+.buttons {
+  font-size:20px;
 }
