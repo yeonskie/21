@@ -146,7 +146,8 @@ p:hover {
 }
 
 .secret-link {
-  padding-left:10px;
+  margin-right:0;
   color:blueviolet;
   font-size:14px;
+  position:absolute;
 }

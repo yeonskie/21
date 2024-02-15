@@ -7,24 +7,71 @@
     <link rel="stylesheet" href="https://use.typekit.net/rdu6dvq.css">
     </head>
     <body>
-        <div class="banner">
-            <h1 class="purples"><a style="text-decoration:none;" href="http://21yearsofgirlhood.com/welcome.html">SAVANNAH SOK</a></h1>
+        <div class="diary">
+            <a href="2016diary.html" class="secret-link">shhhhh</a></p>
           </div>
-          <div class="centering">
-            <div class="post">
-              <img src="taeyeon.jpeg">
-            </div>
-          </div>
-          <div class="profile">
-            <h3 style="background-color:#BDB5D5;width:160px;color:white;    border:2px solid #7851A9;"><i>in your orbit</i></h3><br>
-            <img style="width:125px;border:3px dotted #7851A9;padding:5px;" src="profile.jpeg">
-            <h2 style="margin-top:0;"> <b>savannah</b></h2>
-            <p style="width:150px;">15, pisces, bisexual;<br>
-            take me whenever the wind blows</p>
-          </div>
+      <div class="profile">
+        <img src="profile.jpeg">
+        <h1>savannah sok</h1>
+        <p>15, pisces, bisexual;<br>
+          take me whenever the wind blows</p>
+          <p><a href="http://21yearsofgirlhood.com/index/2017/2017.html">home</a>, <a href="http://21yearsofgirlhood.com/index/2017/about.html">about</a>, <a href="">ig</a></p>
           <button onclick="goBack()">Back</button>
+      </div>
+      <div class="flex-container">
+        <div class="row">
+            <div class="flex-item"><img src="1.png"></div>
+            <div class="flex-item"><img src="2.png"></div>
+            <div class="flex-item"><img src="3.png"></div>
+            <div class="flex-item"><img src="10.png"></div>
+            <div class="flex-item"><img src="11.png"></div>
+            <div class="flex-item"><img src="9.png"></div>
+            <div class="flex-item"><img src="4.png"></div>
+            <div class="flex-item"><img src="5.png"></div>
+            <div class="flex-item"><img src="6.png"></div>
+            <div class="flex-item"><img src="7.png"></div>
+            <div class="flex-item"><img src="8.png"></div>
+            <div class="flex-item"><img src="12.png"></div>
+            <div class="flex-item"><img src="13.png"></div>
+        </div>
           <script>
-            function goBack() {
+            function generateColumns() {
+        var flexContainer = document.getElementById('flexContainer');
+        var newRow = document.createElement('div');
+        newRow.className = 'row';
+        for (var i = 1; i <= 5; i++) { // Generating 5 columns per row
+            var newColumn = document.createElement('div');
+            newColumn.className = 'flex-item';
+            newColumn.innerHTML = `<img src="${i}.png">`;
+            newRow.appendChild(newColumn);
+        }
+        flexContainer.appendChild(newRow);
+    }
+
+    // Function to check if the user has scrolled to the rightmost edge
+    function checkScroll() {
+        var flexContainer = document.getElementById('flexContainer');
+        var lastRow = flexContainer.lastChild;
+        var lastColumn = lastRow.lastChild;
+        var lastColumnRect = lastColumn.getBoundingClientRect();
+        if (lastColumnRect.right <= flexContainer.getBoundingClientRect().right) { // If the rightmost column is within the container
+            generateColumns(); // Generate new columns
+        }
+    }
+
+    // Event listener for scrolling
+    window.addEventListener('scroll', checkScroll);
+
+    // Initial generation of columns
+    for (var i = 0; i < 3; i++) { // Initial generation of 3 rows
+        generateColumns();
+    }
+
+    // Go back function
+    function goBack() {
+        window.history.back();
+    }
+        function goBack() {
             window.history.back();
         }
           </script>
