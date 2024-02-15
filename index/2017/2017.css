@@ -1,45 +1,45 @@
 @font-face {
-    font-family: 'Rocher';
-    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
-  }
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
 
-  body {
-    background-color:rgb(255, 247, 210);
-    margin:0;
-    font-family: "brevia", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    overflow-y:hidden;
-  }
+body {
+  background-color: rgb(255, 247, 210);
+  margin: 0;
+  font-family: "brevia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-y: hidden;
+}
 
-  button {
-    background-color:#BDB5D5;
-    color:white;
-    border:2px solid #7851A9;
-  }
+button {
+  background-color: #BDB5D5;
+  color: white;
+  border: 2px solid #7851A9;
+}
 
-  .flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    position: absolute;
-    margin-top:0;
-    width:100%;
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .row {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center; /* Set the height of each row */
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-.flex-item { /* Fixed width for each column */
-    margin: 40px;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 300px;
-    font-size: 18px;
-    width: 300px;
-    height: 300px;
+
+.flex-item {
+  margin: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 300px;
+  font-size: 18px;
+  width: 300px;
+  height: 300px;
 }
 
 .flex-item img {    
@@ -48,27 +48,34 @@
 }
 
 h1 {
-  font-size:20px;
+  font-size: 20px;
 }
 
-p{
-  width:170px;
-  font-size:13px;
+p {
+  width: 170px;
+  font-size: 13px;
 }
+
 .profile {  
-  margin-left:50px;
-  margin-top:50px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .profile img {
-  width:100px;
-  border:5px dotted #7851A9;
+  width: 100px;
+  border: 5px dotted #7851A9;
 }
-
 
 .diary .secret-link {
   opacity: 0;
   transition: opacity 0.3s ease;
+  color: blueviolet;
+  font-size:15px;
+  bottom:50%;
+  left:49%;
+  right:20%;
+  position:fixed;
+  transform: translateX(-50%);
 }
 
 /* Style for revealing the link on hover */
@@ -76,8 +83,44 @@ p{
   opacity: 1;
 }
 
-.secret-link {
-padding-left:10px;
-color:blueviolet;
-font-size:14px;
+.flex-item {
+  margin: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 300px;
+  font-size: 18px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flex-item img {    
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
