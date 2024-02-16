@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(255, 247, 210);
+  background-color:antiquewhite;
   margin: 0;
   font-family: "brevia", sans-serif;
   font-weight: 400;
@@ -93,7 +93,11 @@ p {
   height: 300px;
   position: relative;
   overflow: hidden;
+  border:1px solid black;
+  border-radius:20px;
+  padding:7px;
 }
+
 
 .flex-item img {    
   width: 100%;
@@ -136,4 +140,46 @@ p {
   white-space: nowrap; /* Ensure text doesn't wrap */
   overflow: hidden; /* Hide overflow */
   text-overflow: ellipsis; /* Add ellipsis for long texts */
+}
+
+a {
+  text-decoration:none;
+  color:#7851A9;
+}
+
+a:hover {
+  text-decoration:underline;
+  
+}
+
+.nav-tab {
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  right:30px;
+  top:30px;
+  border:1px solid #7851A9;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.options button {
+  width:100%;
+  border-radius:15px;
+  padding:5px;
+  gap:10px;
+}
+
+.nav-tab:hover {
+  background-color:#7851A9;
+  color:white;
 }

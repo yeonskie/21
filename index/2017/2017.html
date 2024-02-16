@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/rdu6dvq.css">
     </head>
     <body>
+        <div class="nav-tab" onclick="toggleOptions()">
+            navigate
+            <div class="options" id="options">
+              <button><a href="../2015/2015.html">2015</a></button>
+              <button><a href="../2016/2016.html">2016</a></button>
+              <button><a href="">2017</a></button>
+              <button><a href="../2018/2018.html">2018</a></button>
+              <button><a href="../2019/2019.html">2019</a></button>
+              <button><a href="../2020/2020.html">2020</a></button>
+              <button><a href="../2021/2021.html">2021</a></button>
+              <button><a href="../2022/2022.html">2022</a></button>
+            </div>
+          </div>
+          
         <div class="diary">
             <a href="2017diary.html" class="secret-link">super secret link</a></p>
           </div>
@@ -113,6 +127,16 @@
         function goBack() {
             window.history.back();
         }
+
+        function toggleOptions() {
+  var options = document.getElementById("options");
+  if (options.style.display === "none") {
+    options.style.display = "block";
+  } else {
+    options.style.display = "none";
+  }
+}
+
           </script>
     </body>
 </html>
