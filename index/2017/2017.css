@@ -109,7 +109,8 @@ p {
   height: 100%;
   opacity: 0;
   transition: opacity 0.3s;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow: hidden; /* Added overflow property */
 }
 
 .flex-item:hover .overlay {
@@ -117,10 +118,22 @@ p {
 }
 
 .text {
-  color: white;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-wrap:wrap; 
+}
+
+/* Add this CSS to your existing stylesheet */
+.flex-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .text {
+  white-space: nowrap; /* Ensure text doesn't wrap */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long texts */
 }
