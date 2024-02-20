@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="https://use.typekit.net/rdu6dvq.css">
     </head>
     <body>
+        <div class="sticky-note">
+            <div style="width:200px;" class="sticky-text">rmbr practice driving w dad on sunday 11am!! might make u want to die but at least you can drive places lolol</div>
+            <img style="width:250px;" src="stickynote.png">
+        </div>
+        <div style="left:550px;" class="sticky-note">
+            <div style="width:215px;" class="sticky-text">text</div>
+            <img style="width:250px;" src="stickynote.png">
+        </div>
+        <div style="left:850px;" class="sticky-note">
+            <div style="width:215px;" class="sticky-text">text</div>
+            <img style="width:250px;" src="stickynote.png">
+        </div>
+        <div style="left:1150px;" class="sticky-note">
+            <div style="width:215px;" class="sticky-text">text</div>
+            <img style="width:250px;" src="stickynote.png">
+        </div>
         <div class="nav-tab" onclick="toggleOptions()">
             navigate
             <div class="options" id="options">
@@ -90,54 +106,19 @@
             </div>
         </div>
           <script>
-            function generateColumns() {
-        var flexContainer = document.getElementById('flexContainer');
-        var newRow = document.createElement('div');
-        newRow.className = 'row';
-        for (var i = 1; i <= 5; i++) { // Generating 5 columns per row
-            var newColumn = document.createElement('div');
-            newColumn.className = 'flex-item';
-            newColumn.innerHTML = `<img src="${i}.png">`;
-            newRow.appendChild(newColumn);
+
+        function toggleOptions() {
+            var options = document.getElementById("options");
+            if (options.style.display === "none") {
+                options.style.display = "block";
+            } else {
+                options.style.display = "none";
+            }
         }
-        flexContainer.appendChild(newRow);
-    }
 
-    // Function to check if the user has scrolled to the rightmost edge
-    function checkScroll() {
-        var flexContainer = document.getElementById('flexContainer');
-        var lastRow = flexContainer.lastChild;
-        var lastColumn = lastRow.lastChild;
-        var lastColumnRect = lastColumn.getBoundingClientRect();
-        if (lastColumnRect.right <= flexContainer.getBoundingClientRect().right) { // If the rightmost column is within the container
-            generateColumns(); // Generate new columns
-        }
-    }
-
-    // Event listener for scrolling
-    window.addEventListener('scroll', checkScroll);
-
-    // Initial generation of columns
-    for (var i = 0; i < 3; i++) { // Initial generation of 3 rows
-        generateColumns();
-    }
-
-    // Go back function
-    function goBack() {
-        window.history.back();
-    }
         function goBack() {
             window.history.back();
         }
-
-        function toggleOptions() {
-  var options = document.getElementById("options");
-  if (options.style.display === "none") {
-    options.style.display = "block";
-  } else {
-    options.style.display = "none";
-  }
-}
 
           </script>
     </body>

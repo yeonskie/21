@@ -183,3 +183,16 @@ a:hover {
   background-color:#7851A9;
   color:white;
 }
+
+.sticky-note {
+  position:absolute;
+  left:250px;
+}
+
+.sticky-text {
+  position:absolute;
+  left:30px;
+  top:55px;
+  width:90%;
+  font-size:13px;
+}
