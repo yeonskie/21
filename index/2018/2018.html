@@ -1,81 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>2018</title>
-        <link rel="stylesheet" href="2018.css">
-        <link rel="stylesheet" href="https://use.typekit.net/gqx6pfn.css">
-    </head>
-    <body>
-        <div id="playlist-container">
-            <div id="playlist">
-              <div id="album-cover">
-                <img src="tn.jpg" alt="Album Cover">
-              </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2018.css">
+    <title>title</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ppe7muh.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="goBack()">Go Back</button>
+        <div style="margin-left:20px;margin-top:50px;text-align:center;padding-bottom:0px;" class="text">INTERNET BROWSING HISTORY</div>
+        <div class="background">
+            <div class="item2">
+                <video width="300px;" height="300px;" controls>
+                    <source src="1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div style="background: color #81236b;font-size:14px;" class="caption">A short vine comp that should make your day
+                </div>
+                <div class="channel">
+                    Carson Hamblin
+                </div>
+                </div>
+                <div class="item2">
+                    <video width="300" height="300" controls>
+                        <source src="2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">Just Trying To Blend In With My Green Screen
+                    </div>
+                    <div class="channel">
+                        Jenna Marbles
+                    </div>
+                    </div>
+                 <div class="item2">
+                    <video width="500" height="500" controls>
+                    <source src="3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">Today is your Tomorrow ☼ Weight loss motivation
+                    </div>
+                    <div class="channel">
+                        Alivia D'Andrea
+                    </div>
+                </div>
+                <div class="item2">
+                    <video width="300" height="300" controls>
+                    <source src="4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">Hello. | Ep 1 | Minecraft Crazy Craft 3.0
+                    <div class="channel">
+                        LDShadowLady
+                    </div>
+                    </div>
+                    </div>
+                <div class="item2">
+                    <video width="300" height="300" controls>
+                        <source src="5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">THE BIGGEST SHOPPING SPREE
+                    </div>
+                    <div class="channel">
+                        Zoella
+                    </div>
+                </div>
+                <div class="item2">
+                    <video width="300" height="300" controls>
+                    <source src="6.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">
+                        Katy Perry - Unconditionally (Official)
+                    </div>
+                    <div class="channel">
+                        Katy Perry
+                    </div>
+                </div>
+                <div class="item2">
+                    <video width="300" height="300" controls>
+                    <source src="7.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">
+                        What is Depression?
+                    </div>
+                    <div class="channel">
+                        Therapist Aid
+                    </div>
+                </div>
+                <div class="item2">
+                    <video width="300" height="300" controls>
+                    <source src="8.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                    </video>
+                    <div style="background: color #81236b;font-size:14px;" class="caption">
+                        Video Title
+                    </div>
+                    <div class="channel">
+                        Name
+                    </div>
+                </div>
             </div>
-            <div id="audio-info">
-              <div id="song-info">
-                <h2>Song Name</h2>
-                <p>Album Name</p>
-              </div>
-              <div id="audio-controls">
-                <button onclick="playAudio()">play</button>
-                <button onclick="pauseAudio()">pause</button>
-                <button onclick="stopAudio()">stop</button>
-                <button onclick="nextSong()">next</button>
-              </div>
-              <div id="audio-controls">
-                <select id="audio-select" onchange="playSelectedSong(this)">
-                  <option value="song1.mp3">Song 1</option>
-                  <option value="song2.mp3">Song 2</option>
-                  <option value="song3.mp3">Song 3</option>
-                  <!-- Add more songs as needed -->
-                </select>
-              </div>
+        <div class="bottom">
+            <div style="margin-left:30px;" class="item"><< sav / 16 / questioning (?_) >><br><br>
+            keep an eye out for the ocean, there is always a storm brewing<br> 
             </div>
-          </div>
-          <script>
-var audioPlayer = document.getElementById('audio-player');
-  var currentSongIndex = 0;
-  var songs = ['song1.mp3', 'song2.mp3', 'song3.mp3']; // Update with actual song URLs
-  
-  function playSong(audioSrc) {
-    var audioSource = document.getElementById('audio-source');
-    var albumCover = document.getElementById('album-cover').getElementsByTagName('img')[0];
-    var songName = document.querySelector('#song-info h2');
-    var albumName = document.querySelector('#song-info p:nth-child(2)');
-    var playlistName = document.querySelector('#song-info p:nth-child(3)');
-    
-    // Change audio source
-    audioSource.src = audioSrc;
-    
-    // Update album cover (replace with appropriate cover image)
-    albumCover.src = "album_cover.jpg";
-    
-    // Update song info (replace with appropriate song/album/playlist names)
-    songName.textContent = "Song Name";
-    albumName.textContent = "Album Name";
-    playlistName.textContent = "Playlist Name";
-    
-    // Play the selected song
-    audioPlayer.load(); // reload audio player
-    audioPlayer.play();
-  }
-  
-  function playSelectedSong(select) {
-    var selectedOption = select.options[select.selectedIndex];
-    var audioSrc = selectedOption.value;
-    var songTitle = selectedOption.textContent;
-    
-    // Call playSong function with selected song
-    playSong(audioSrc);
-  }
-  
-  function playAudio() {
-    audioPlayer.play();
-  }
-  
-  function pauseAudio() {
-</script>
-          </script>
-    </body>
+            <div style="text-align:center;" class="item">
+                message me to be mutuals!</div>
+            <div style="text-align:right; padding-right:50px;" class="item">
+                <a href="">link 1</a> /
+                <a href="">link 2</a> /
+                <a href="">link 3</a> /
+                <a href="">link 4</a> /
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+  window.history.back();
+}
+    </script>
+</body>
 </html>

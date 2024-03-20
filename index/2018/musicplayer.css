@@ -1,0 +1,51 @@
+  body {
+    font-family: "miller-headline", serif;
+font-weight: 400;
+font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  #playlist-container {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  #playlist {
+    flex-shrink: 0;
+    width: 220px;
+    padding: 20px;
+    align-items:center;
+    justify-content: space-evenly;
+
+
+  }
+  #audio-info {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  #album-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  #audio-controls {
+    margin-top: 20px;
+    width:350px;
+  }
+  #audio-controls button {
+    margin-right: 10px;
+    padding: 8px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #audio-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
