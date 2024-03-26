@@ -57,7 +57,7 @@ html {
 }
 
 .timeline .year:hover {
-  background:lime;
+  background:#929292;
 }
 
 .timeline .year:first-of-type {
@@ -109,7 +109,7 @@ html {
   background: #e9e9e9;
 }
 .timeline .event:hover:after {
-  background: #d31717;
+  background: #000000;
 }
 .timeline .event:nth-of-type(2n) {
   float: left;
@@ -295,4 +295,8 @@ button:hover {
 
 .buttons {
   font-size:20px;
+}
+
+ul .timeline {
+  font-size:12px;
 }
