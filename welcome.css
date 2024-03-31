@@ -56,6 +56,10 @@ html {
   border-radius:10px;
 }
 
+.timeline .year.dark-mode {
+  background: white;
+}
+
 .timeline .year:hover {
   background:#929292;
 }
@@ -266,6 +270,11 @@ body.dark-mode {
   background-color: black;
 }
 
+button.dark-mode {
+  color: white;
+  background-color: black;
+}
+
 #toggleModeButton {
   position: absolute;
   bottom:10px;
@@ -299,4 +308,8 @@ button:hover {
 
 ul .timeline {
   font-size:12px;
+}
+
+p.dark-mode {
+  color:white;
 }

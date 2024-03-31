@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    background-color:rgb(104, 104, 104);
+    color:white;
+    font-family: "citrine-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size:15px;
+    background: linear-gradient(135deg, #8B4513, #000, #a5a5a5, #000, #8B4513);
+    background-size: 300% 300%;
+    animation: gradientAnimation 25s linear infinite;
+    height:infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+.text1 {
+    position:relative;
+    left:50px;
+    top:50px;
+    text-align:center;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
