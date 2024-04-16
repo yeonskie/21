@@ -28,20 +28,54 @@ body, html {
 
 #rightSide {
     border: 1px solid #e5e5e5;
+    border-radius:20px;
     flex: 0.5;
+    padding-left:15px;
 }
 
 #leftSide {
-    flex: 1;
+    flex: .8;
 }
 
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 2 columns */
-    gap: 10px; /* Gap between grid items */
+    gap: 5px; /* Gap between grid items */
+    width:97%;
   }
   
   .photo-grid img {
     width: 100%; /* Ensure images take up full width of their grid cell */
     height: auto; /* Maintain aspect ratio */
+    border-radius:10px;
   }
+
+h1 {
+    font-size:25px;
+}
+
+h2 {
+    font-size:18px;
+}
+
+.dates {
+    text-align:right;
+    margin-right:50px;
+    font-size:20px;
+}
+
+.diary {
+    position:absolute;
+    margin-top:750px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.diary:hover {
+    opacity: 1;
+    color:black;
+}
+
+a:hover {
+    color:black;
+}
