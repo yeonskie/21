@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <link rel="stylesheet" href="2024.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="top-half">
+            <div class="top-section">
+                <img src="1.jpeg">
+                <img src="2.jpeg">
+                <img src="3.jpeg">
+                <img src="4.jpeg">
+                <img src="5.jpeg">
+                <img src="8.jpeg">
+                <img src="9.jpeg">
+                <img src="10.jpeg">
+                <img src="11.jpeg">
+                <img src="12.jpeg">
+                <img src="13.jpeg">
+                <img src="14.jpeg">
+                <img src="15.jpeg">
+                <img src="16.jpeg">
+                <img src="17.jpeg">
+                <img src="18.jpeg">
+                <img src="19.jpeg">
+                <img src="20.jpeg">
+            </div>
+        </div>
+        <div class="bottom-half">
+            <div class="bottom-section">
+                <img src="21.jpeg">
+                <img src="22.jpeg">
+                <img src="23.jpeg">
+                <img src="24.jpeg">
+                <img src="25.jpeg">
+                <img src="26.jpeg">
+                <img src="27.jpeg">
+                <img src="28.jpeg">
+                <img src="29.jpeg">
+                <img src="30.jpeg">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="pic">
+            <img src="6.jpeg">
+            <img src="32.jpeg">
+            <img src="33.jpeg">
+            <img src="34.jpeg">
+            <img src="35.jpeg">
+            <img src="36.jpeg">
+        </div>
+    </div>
+    <div class="container3">
+        <div class="pic2">
+            <img src="7.jpeg">
+        </div>
+    </div>
+    <div class="container4">
+        <div class="pic3">
+            <img src="31.jpeg">
+        </div>
+    </div>
+    <!-- updates tab (tomkirk)-->
+  <div id="tab">
+    <!-- section 1 -->
+    <div class="nb">
+      <div class="sp"></div>
+      <!-- text here -->
+      <div class="dates">
+        <a href="../2015/2015.html">2015</a> |  <a href="../2016/2016.html">2016</a>
+     <br><a href="../2017/2017.html">2017</a> |  <a href="../2018/2018.html">2018</a>
+     <br><a href="../2019/2019.html">2019</a> |  <a href="../2020/2020.html">2020</a>
+     <br><a href="../2021/2021.html">2021</a> |  <a href="../2022/2022.html">2022</a>
+    <br><a href="../2023/2023.html">2023</a> | <a href="../2024/2024.html">2024</a>
+    <br><a href="../../welcome.html">wel</a> | <a href="../../credit.html">©</a>
+      </div>
+    </div>
+    <!-- end of section 1-->
+
+    <!-- section 2 -->
+    <div class="nb">
+      <div class="sp"></div>
+      <!-- text here -->
+        !! 100% progress
+    </div>
+    <!-- end of section 2-->
+
+  </div> <!-- end of tab -->
+        <script>
+            const topSection = document.querySelector('.top-section');
+
+// Duplicate images infinitely
+function duplicateImages() {
+    const images = topSection.querySelectorAll('img');
+    const totalImages = images.length;
+    const lastImage = images[totalImages - 1];
+    const clone = lastImage.cloneNode(true);
+    topSection.insertBefore(clone, images[0]);
+}
+
+// Check if user reached the end to duplicate images
+topSection.addEventListener('scroll', function() {
+    if (topSection.scrollLeft === 0) {
+        duplicateImages();
+        topSection.scrollLeft = topSection.scrollWidth / 2;
+    } else if (topSection.scrollLeft + topSection.clientWidth === topSection.scrollWidth) {
+        duplicateImages();
+    }
+});
+
+        </script>
+    </body>
+</html>
