@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;}
+
 body {
     margin: 0;
     padding: 0;
@@ -124,3 +131,33 @@ button {
     color:yellow;
 }
 
+.diary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.diary {
+    margin-bottom:50px;
+    padding:50px;
+    border:2px solid rgb(28, 28, 28);
+    width:50%;
+    height:40%;
+}
+
+button {
+    width:100px;
+    position:absolute;
+    left:10px;
+    top:10px;
+    font-family: "paralucent", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}

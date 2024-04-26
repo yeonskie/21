@@ -8,15 +8,24 @@
     <body>
         <div class="container">
             <div class="centered-div">
-                <h1>entry #2</h1><h2>3/28/20</h2>
-                <p>blah blah blah</p>
-                <button onclick="goBack()">Go Back</button>
+                <h1>during</h1><h2>5/2/20; 06:54</h2>
+                <audio id="audio" src="synthesis 2.m4a"></audio>
+                <button onclick="playPauseAudio()">play/stop</button>
             </div>
         </div>
+        <button onclick="goBack()">Go Back</button>
         <script>
         function goBack() {
             window.history.back();
           }
+
+          function playPauseAudio() {
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
           </script>
     </body>
 </html>

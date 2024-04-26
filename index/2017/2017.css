@@ -196,3 +196,21 @@ a:hover {
   width:90%;
   font-size:13px;
 }
+
+
+.secret-link {
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.container:hover .secret-link {
+  opacity: 1; /* Set opacity to 1 when container is hovered */
+}
+
+.container {
+  bottom:200px;
+  position:absolute;
+  bottom:15px;
+  left:15px;
+  width:100vw;
+}

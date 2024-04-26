@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;}
+
+body, html {
+    background-color:rgb(104, 104, 104);
+    color:white;
+}
+
+.text {
+    left:50%;
+    top:30%;
+    position:absolute;
+}

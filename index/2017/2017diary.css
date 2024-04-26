@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;}
+
+.sticky-note {
+  position:absolute;
+  left:250px;
+}
+
+.sticky-text {
+  position:absolute;
+  left:60px;
+  top:110px;
+  width:75%;
+  font-size:13px;
+}
+
+.container {
+    bottom:50px;
+    right:50px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+  }
+
+button {
+    position:absolute;
+    top:10px;
+    font-family: "brevia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    font-family: "brevia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height:100vh;
+    background-image:url('roll.gif');
+}
+
+.sticky-note2 {
+    position:absolute;
+    left:850px;
+  }

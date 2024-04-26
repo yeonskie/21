@@ -60,8 +60,10 @@ h2 {
 
 .dates {
     text-align:right;
-    margin-right:50px;
-    font-size:20px;
+    right:50px;
+    font-size:18px;
+    position:absolute;
+    bottom:50px;
 }
 
 .diary {
@@ -76,6 +78,10 @@ h2 {
     color:black;
 }
 
-a:hover {
+a {
     color:black;
+}
+
+a:hover {
+    color:rgb(87, 141, 192);
 }

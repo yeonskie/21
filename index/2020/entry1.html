@@ -6,64 +6,26 @@
         <link rel="stylesheet" href="https://use.typekit.net/rrl7mcn.css">
     </head>
     <body>
-        <div class="musicplayer">
-            <select id="songSelect">
-              <option value="song1.mp3">two birds on a wire - regina spektor</option>
-              <option value="song2.mp3">wish you were sober - conan gray</option>
-              <option value="song3.mp3">are you bored yet? (ft. clairo) - wallows</option>
-              <option value="song4.mp3">dontmakemefallinlove - cuco</option>
-              <option value="song5.mp3">warm blood - flor</option>
-      
-              <!-- Add more options for additional songs -->
-          </select>
-          
-          <audio id="myAudio">
-              <source id="audioSource" type="audio/mpeg">
-              Your browser does not support the audio element.
-          </audio>
-      
-      <button onclick="playAudio()">play</button>
-      <button onclick="pauseAudio()">pause</button>
-      <button onclick="stopAudio()">stop</button>
       </div>
         <div class="container">
             <div class="centered-div">
-                <h1>entry #1</h1><h2>3/28/20</h2>
-                <p>The main reason I’m here, to recover, has not been lost to me. I don’t know when or how it’ll happen, nor when I will get out of this place…all I can do is hope that one day it will be alright. Sometimes I feel a deep sense of inadequacy, unfulfillment. Anxiety and I are well-acquainted friends, almost too close to bear. I hate how its toxicity rules my life, the way I live my life. Being stable is a goal but never a reality. I’m not sure where to go or who to tell where I can go. I’m tired, exhausted…I feel like I’m out of options, that everyone here dislikes me and that I’m unlikeable in general. True or a figment of my imagination?
-                </p>
-                <p>I am often hard on myself for no reason at all. I use the words “pathetic” “embarrassing” etc. to describe my every fault or error. Even things I’m struggling with on a fundamental level—always turn toward the negatives in my brain. It makes me a slave to my own degrading thoughts. Enough that the self-criticism is not only an abstract but now a voice in my head, begging to be drawn away from the toxicity that are my thoughts and opinions of myself.</p>
-                <button onclick="goBack()">Go Back</button>
+                <h1>before</h1><h2>3/28/20; 04:15</h2>
+                <audio id="audio" src="synthesis 7.m4a"></audio>
+                <button onclick="playPauseAudio()">play/stop</button>
             </div>
         </div>
+        <button onclick="goBack()">Go Back</button>
         <script>
-       var audio = document.getElementById("myAudio");
-var audioSource = document.getElementById("audioSource");
-var songSelect = document.getElementById("songSelect");
-
-// Set the initial volume (0.5 for example, adjust as needed)
-audio.volume = 0.5;
-
-function playAudio() {
-  audio.play();
+function playPauseAudio() {
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
 }
-
-function pauseAudio() {
-  audio.pause();
-}
-
-function stopAudio() {
-  audio.pause();
-  audio.currentTime = 0;
-}
-
-songSelect.addEventListener("change", function() {
-  audioSource.src = songSelect.value;
-  audio.load();
-});
-
 function goBack() {
-  window.history.back();
-}
+            window.history.back();
+          }
           </script>
     </body>
 </html>
