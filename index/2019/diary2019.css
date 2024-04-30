@@ -8,10 +8,41 @@ img {
 body, html {
     background-color:rgb(104, 104, 104);
     color:white;
+    animation: gradientAnimation 25s linear infinite;
+    background: linear-gradient(135deg, #938e8a, #000, #a5a5a5, #000, #8B4513);
+    background-size: 300% 300%;
+    height:infinite;
+    font-family: "citrine-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size:12px;
 }
 
 .text {
     left:50%;
     top:30%;
     position:absolute;
+    width:215px;
 }
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  button {
+    width:70px;
+    position:fixed;
+    left:40px;
+    top:40px;
+    font-size:11px;
+    font-family: "citrine-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    background-color:#a5a5a5;
+    color:white;
+    border:1px solid white;
+    padding:5px;
+  }

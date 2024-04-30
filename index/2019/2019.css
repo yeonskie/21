@@ -7,16 +7,19 @@ img {
 }
 
 body {
-    background-color:rgb(104, 104, 104);
-    color:white;
     font-family: "citrine-variable", sans-serif;
     font-variation-settings: "wght" 400;
     font-size:15px;
-    background: linear-gradient(135deg, #8B4513, #000, #a5a5a5, #000, #8B4513);
-    background-size: 300% 300%;
-    animation: gradientAnimation 25s linear infinite;
-    height:infinite;
   }
+
+  body, html {
+    background-color:rgb(104, 104, 104);
+    color:white;
+    animation: gradientAnimation 25s linear infinite;
+    background: linear-gradient(135deg, #938e8a, #000, #a5a5a5, #000, #8B4513);
+    background-size: 300% 300%;
+    height:infinite;
+}
 
   @keyframes gradientAnimation {
     0% {
@@ -41,4 +44,47 @@ a {
 
 a:hover {
     text-decoration:underline;
+}
+
+#tab {
+  z-index:999;
+  overflow:hidden;
+  position:fixed;
+  left:40px;
+  top:50px;
+  color:white;
+  background:#a5a5a5;
+  border:1px solid white;
+  padding:10px;right:50px;top:72px;
+  font-size:11px;text-align:center;
+  width:80px;/*tab's width*/
+  height:30px;/*title's width*/
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  font-family: "citrine-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+#tab:hover {
+  height:185px;
+}
+
+#tab a {
+  color:white;
+}
+
+button {
+  width:70px;
+  position:fixed;
+  left:40px;
+  top:40px;
+  font-size:11px;
+  font-family: "citrine-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+  background-color:#a5a5a5;
+  color:white;
+  border:1px solid white;
+  padding:5px;
 }
