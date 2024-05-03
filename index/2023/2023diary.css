@@ -21,15 +21,8 @@ body, html {
 .container {
   display: flex;
   height: 100%;
+  width:100%;
   margin:10px;
-}
-
-.lefthalf {
-  flex: 1;
-  height: 100%;
-  overflow-y: scroll;
-  padding:10px;
-  width:100px;
 }
 
 .righthalf {
@@ -37,7 +30,7 @@ body, html {
   height: 90%;
   overflow-y: scroll;
   margin:100px;
-  width:100px;
+  width:200px;
   border:1px solid white;
   padding:20px;
 }
@@ -56,15 +49,20 @@ body, html {
   border:1px white solid;
 }
 
+.content {
+    justify-content: center;
+}
+
 .dates {
   text-align:right;
-  right:50px;
+  right:70px;
   font-size:16px;
   position:absolute;
-  bottom:50px;
+  bottom:100px;
   border:1px white solid;
-  padding:20px;
+  padding:5px;
   background-color:black;
+  cursor:auto;
 }
 
 a {
@@ -78,7 +76,11 @@ a:hover {
 }
 
 .content {
-  width:250px;
+  width:200px;
+  font-size:14px;
+  left:50%;
+  position:absolute;
+  top:200px;
 }
 
 .secret-link {
@@ -99,17 +101,9 @@ a:hover {
   z-index:0;
 }
 
-button {
-  position:fixed;
-  right:50px;
-  bottom:200px;
-  font-family: "epilogue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding:5px;
-  background-color:black;
-  border: 1.5px solid rgb(185, 185, 185);
-  cursor:pointer;
-  color:rgb(185, 185, 185);
-  text-transform:uppercase;
+.dates button {
+    background-color:black;
+    color:white;
+    border:none;
+    cursor:pointer;
 }

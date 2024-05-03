@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>diary</title>
+        <link rel="stylesheet" href="2022diary.css">
+        <link rel="stylesheet" href="https://use.typekit.net/khe1rba.css">
+        <link rel="icon" type="png" href="icon.jpeg">
+    </head>
+    <body>
+      <div class="text">
+        LOVE IS LOVE
+      </div>
+      <div class="text2">LOVE IS LOVE</div>
+      <div class="container">
+            <p>
+                it comes as a surprise to no one that time heals most wounds. i wish i could tell myself a year ago that everything would be fine.. maybe not perfect but i'll be fine. not everything has to be on my shoulders, not everyone is out to get me. i really hope that a year from now, i'll be saying the same things in the present tense. i'm happy. i'm healthy. i'm fine.
+                <br><br>
+                they always say loving yourself is the way to heal all wounds. i call bullshit. loving yourself and your body is so difficult and feels impossible at times. i think practicing body neutrality is so much more effective and important. it's realistic. no one has a perfect relationship with themselves, and being at a neutral state — without intense emotion — i feel is the best place to be mentally.  
+            </p>
+        </div>
+        <div id="holder">
+          <p class="label">
+            <button onclick="goBack()">Go Back</button>
+        </p> <!-- change titles here -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){ 
+$(".inside").hide(); 
+$(".label").click(function(){ 
+$(this).next(".inside").slideToggle('fast'); 
+}); 
+}); 
+function goBack() {
+  window.history.back();
+}
+</script>
+    </body>
+</html>

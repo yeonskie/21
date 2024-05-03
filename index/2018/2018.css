@@ -82,6 +82,15 @@ button {
     position:absolute;
     left:10px;
     top:10px;
+    font-family: "paralucent", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color:rgb(28, 28, 28);
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    border: rgb(222, 71, 190) 2.5px solid;
 }
 
 .text2 {

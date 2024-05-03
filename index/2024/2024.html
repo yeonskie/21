@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>title</title>
+        <title>helping hand</title>
         <link rel="stylesheet" href="2024.css">
         <link rel="icon" type="png" href="icon.jpeg">
+        <link rel="stylesheet" href="https://use.typekit.net/zmc5gvs.css">
     </head>
     <body>
+        <button onclick="goBack()">Back</button>
+        <div class="container5">
+            <a href="2024diary.html" class="secret-link">last one for the road</a>
+        </div>
         <div class="container">
         <div class="top-half">
             <div class="top-section">
@@ -111,6 +116,10 @@ topSection.addEventListener('scroll', function() {
         duplicateImages();
     }
 });
+
+function goBack() {
+            window.history.back();
+          }
 
         </script>
     </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>diary</title>
+        <link rel="stylesheet" href="2024diary.css">
+        <link rel="icon" type="png" href="icon.jpeg">
+        <link rel="stylesheet" href="https://use.typekit.net/zmc5gvs.css">
+    </head>
+    <body>
+    <div class="container3">
+        <div class="pic2">
+            i look back at the past and think about the broken person i used to be. i used to think that the only way out of this misery would be to let go — let go of everything. my past, my present, but also my future. i didn't see a future ahead of me for the longest time.
+            <br><br>
+            unfortunately, getting back to happiness and stability is a lot harder than letting go, but it's also infinitely more rewarding. life is not meant to miserable or static. you are meant to feel the breeze on your skin, shop for your favorite things, see your friends more than once a year. you also <i>deserve</i> all of these things. you don't need to earn it. you are enough.
+            <br><br>
+            you have to realize that putting yourself first doesn't not make you selfish. it makes you brave and smart, which is far cry from selfish.
+        </div>
+    </div>
+    <div class="container4">
+        <div class="pic3">
+            <img src="ok.jpeg">
+        </div>
+    </div>
+    <!-- updates tab (tomkirk)-->
+        <div id="tab">
+    <!-- section 1 -->
+ <div class="nb">
+      <div class="sp"></div>
+      <button onclick="goBack()">back</button>
+    </div>
+    <!-- end of section 1-->
+
+    <!-- section 2 -->
+    <!-- end of section 2-->
+
+  </div> <!-- end of tab -->
+        <script>
+            const topSection = document.querySelector('.top-section');
+
+// Duplicate images infinitely
+function duplicateImages() {
+    const images = topSection.querySelectorAll('img');
+    const totalImages = images.length;
+    const lastImage = images[totalImages - 1];
+    const clone = lastImage.cloneNode(true);
+    topSection.insertBefore(clone, images[0]);
+}
+
+// Check if user reached the end to duplicate images
+topSection.addEventListener('scroll', function() {
+    if (topSection.scrollLeft === 0) {
+        duplicateImages();
+        topSection.scrollLeft = topSection.scrollWidth / 2;
+    } else if (topSection.scrollLeft + topSection.clientWidth === topSection.scrollWidth) {
+        duplicateImages();
+    }
+});
+
+function goBack() {
+  window.history.back();
+}
+        </script>
+    </body>
+</html>
